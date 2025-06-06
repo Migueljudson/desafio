@@ -1,0 +1,15 @@
+.div {
+background-color: var(--primary-light);
+color: var(--primary-dark);  
+}
+
+
+.title {
+font-weight: bolder;
+font-size: 4rem;
+}
+
+
+.text {
+  font-size: 2rem;
+}
