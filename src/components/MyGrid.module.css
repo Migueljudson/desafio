@@ -9,7 +9,7 @@
     "footer2 footer2 aside2";
 
   grid-template-columns: 30rem 1fr 30rem;
-  grid-template-rows: 10rem 5rem auto calc(100vh - 15rem) 5rem;
+  grid-template-rows: 20rem 5rem auto calc(100vh - 90rem) 20rem;
 
   @media (max-width: 1200px) {
     grid-template-areas:
