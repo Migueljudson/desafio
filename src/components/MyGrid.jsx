@@ -16,7 +16,7 @@ export function MyGrid() {
           <div className={styles.card}>
             <img
               
-              src={"https://picsum.photos/200/300?random=${randomNumbers[0]}"}
+              src={"https://picsum.photos/200/300?=${randomNumbers[0]}"}
             ></img>
             <h2>My Text 0</h2>
             <p>
@@ -34,7 +34,7 @@ export function MyGrid() {
           <div className={styles.card}>
             <img
               
-              src={"https://picsum.photos/200/300?random=${randomNumbers[1]}"}
+              src={"https://picsum.photos/200/300?=${randomNumbers[1]}"}
             ></img>
             <h2>My Text 1</h2>
             <p>
@@ -51,7 +51,7 @@ export function MyGrid() {
 {
           <div className={styles.card}>
             <img
-              src={"https://picsum.photos/200/300?random=${randomNumbers[2]}"}
+              src={"https://picsum.photos/200/300?=${randomNumbers[2]}"}
             ></img>
             <h2>My Text 2</h2>
             <p>
@@ -68,7 +68,7 @@ export function MyGrid() {
 {
           <div className={styles.card}>
             <img
-              src={"https://picsum.photos/200/300?random=${randomNumbers[3]}"}
+              src={"https://picsum.photos/200/300?=${randomNumbers[3]}"}
             ></img>
             <h2>My Text 3</h2>
             <p>
@@ -85,7 +85,7 @@ export function MyGrid() {
 {
           <div className={styles.card}>
             <img
-              src={"https://picsum.photos/200/300?random=${randomNumbers[4]}"}
+              src={"https://picsum.photos/200/300?grayscale=${randomNumbers[4]}"}
             ></img>
             <h2>My Text 4</h2>
             <p>
@@ -108,15 +108,15 @@ export function MyGrid() {
             <h1>Curso Técnico em Informática</h1>
             <h1>Programação para Internet 2025</h1>
           </div>
-          <p>Artur Lima Melo</p>
+          <p>Miguel judson</p>
           <div className={styles.icons}>
-            <a href='https://github.com/ArturLimaMelo' target='_blank'>
+            <a href='https://github.com/Migueljudson' target='_blank'>
               <Github/>
             </a>
-            <a href='https://instagram.com/arturlima_m/' target='_blank'>
+            <a href='https://www.instagram.com/miguelsilva188/#' target='_blank'>
               <Instagram/>
             </a>
-            <a href='tel:+5584981536108' target='_blank'>
+            <a href='tel:+55849999-9999' target='_blank'>
               <Phone/>
             </a>
           </div>
