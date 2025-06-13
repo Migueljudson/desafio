@@ -1,5 +1,5 @@
 import styles from "./MyGrid.module.css";
-import {Github, Instagram, Phone, BookOpenCheck} from "lucide-react";
+import {Github, Instagram, Phone, ClockPlus} from "lucide-react";
 const cards = [0, 1, 2, 3, 4];
 export function MyGrid() {
   // Desestruturação de props
@@ -7,7 +7,7 @@ export function MyGrid() {
   return (
     <div className={styles.container}>
       <header className={styles.header1}>
-        <BookOpenCheck />
+        <ClockPlus />
         <h1>Foco, Força, Fé</h1>
       </header>
       <main className={styles.main}>
