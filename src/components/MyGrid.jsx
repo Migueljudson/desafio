@@ -108,7 +108,7 @@ export function MyGrid() {
             <h1>Curso Técnico em Informática</h1>
             <h1>Programação para Internet 2025</h1>
           </div>
-          <p>Miguel judson</p>
+          <p>Miguel Judson Inacio</p>
           <div className={styles.icons}>
             <a href='https://github.com/Migueljudson' target='_blank'>
               <Github/>
