@@ -12,16 +12,16 @@ export function Footer() {
             <h1>Programação para Internet 2025</h1>
           </div>
           <div>
-            <p>Artur Lima Melo</p>
+            <p>Miguel judson</p>
           </div>
           <div className={styles.icons}>
-            <a href="https://github.com/ArturLimaMelo" target="_blank">
+            <a href="https://github.com/Migueljudson" target="_blank">
               <Github />
             </a>
-            <a href="https://instagram.com/arturlima_m/" target="_blank">
+            <a href="https://www.instagram.com/miguelsilva188/#" target="_blank">
               <Instagram />
             </a>
-            <a href="tel:+5584981536108" target="_blank">
+            <a href="tel:+558499999999" target="_blank">
               <Phone />
             </a>
           </div>
