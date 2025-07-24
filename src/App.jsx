@@ -3,7 +3,7 @@ import "./styles/global.css";
 import { Header } from "./components/Header";
 import { ProductList } from "./components/etapa2/ProductList";
 import { useState } from "react";
-import { Cart } from "./components/etapa2/Cart.jsx";
+import { Cart } from "./components/etapa2/Cart";
 import { Routes, Route } from "react-router";
 
 export default function App() {
