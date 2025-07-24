@@ -1,10 +1,10 @@
 import "./styles/theme.css";
 import "./styles/global.css";
-
 import { Header } from "./components/Header";
-
 import { ProductList } from "./components/etapa2/ProductList";
 import { useState } from "react";
+import { Cart } from "./components/etapa2/Cart.jsx";
+import { Routes, Route } from "react-router";
 
 export default function App() {
   
@@ -19,14 +19,18 @@ export default function App() {
     const index = prevCart.findIndex((item) => item.id === product.id);
     if (index === -1) return prevCart;
     const newCart = [...prevCart];
-    newCart.splice(index, 1); // remove apenas o primeiro encontrado
+    newCart.splice(index, 1);
     return newCart;
   });
   }
   return (
     <>
       <Header cart={cart}/>
-      <ProductList addToCart={addToCart} removeFromCart={removeFromCart}/>
+      <Routes>
+        <Route path="/" element={<ProductList addToCart={addToCart} removeFromCart={removeFromCart}/>}/>
+        <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} addToCart={addToCart}/>} />
+      </Routes>
+      
     </>
   );
 }
