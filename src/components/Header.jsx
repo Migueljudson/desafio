@@ -1,14 +1,19 @@
 
 import styles from "./Header.module.css";
-import { Github, Instagram, Phone, BookOpenCheck } from "lucide-react";
-export function Header({ cart }) {
-  // Desestruturação de props
+import { ShoppingBasket } from "lucide-react";
+import { Link } from "react-router";
+import { useContext } from "react";
+import { CartContext } from "../service/CartContext";
+
+
+export function Header() {
+  const { cart } = useContext(CartContext);
   return (
     <header className={styles.header1}>
-      <h1>MJ_Collection</h1>
+      <Link to="/" className={styles.title}>MJ_collection</Link>
       <div className={styles.cart}>
-        <p>{cart.length} products</p>
-        <p>Total $: {cart.reduce((total, product) => total + product.price, 0).toFixed(2)}</p>
+        <Link to="/cart"><ShoppingBasket /></Link>
+        { cart.length === 0 ? <h5></h5> : <p>{cart.length}</p>}
       </div>
     </header>
   );
