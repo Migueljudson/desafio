@@ -25,7 +25,8 @@ export function ProductList() {
           onChange={() => {
             const query = searchInput.current.value.toLowerCase();
             filteredProducts = products.filter(product =>
-              product.title.toLowerCase().includes(query)
+              product.title.toLowerCase().includes(query) || 
+              product.description.toLowerCase().includes(query)
             );
             setFilteredProducts(filteredProducts);
           }}
@@ -42,7 +43,7 @@ export function ProductList() {
         </div>
          {loading && (
         <div>
-          <CircularProgress
+          <CircularProgress   
             // size="sm"
             thickness={5}
             style={{ margin: "2rem auto", display: "block" }}
