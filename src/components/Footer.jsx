@@ -18,7 +18,7 @@ export function Footer() {
             <a href="https://github.com/Migueljudson" target="_blank">
               <Github />
             </a>
-            <a href="https://www.instagram.com/miguelsilva188/#" target="_blank">
+            <a href="https://www.instagram.com/miguelsilva188/" target="_blank">
               <Instagram />
             </a>
             <a href="tel:+558499999999" target="_blank">

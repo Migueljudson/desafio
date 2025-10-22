@@ -1,13 +1,12 @@
 import styles from "./Product.module.css";
 import { useState } from "react";
 import { useContext } from "react";
-import { CartContext } from "../../service/CartContext";
+import { CartContext } from "../../context/CartContext";
 
 export function Product({ product }) {
 
   const { addToCart } = useContext(CartContext);
   const [qty, setQty] = useState(0);
- 
   return (
     <div className={styles.productCard}>
       <img
