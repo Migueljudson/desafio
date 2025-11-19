@@ -1,17 +1,11 @@
 import styles from "./Cart.module.css";
 import { useState } from "react";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
-export function Cart({ cart, removeFromCart, addToCart }) {
-  const productMap = {};
-  cart.forEach((product) => {
-    if (productMap[product.id]) {
-      productMap[product.id].qty += 1;
-    } else {
-      productMap[product.id] = { ...product, qty: 1 };
-    }
-  });
-
-  const uniqueProducts = Object.values(productMap);
+export function Cart() {
+  const { uniqueProducts, removeFromCart, addToCart, clearCart } = useContext(CartContext);
+  
 
   return (
     <div className={styles.cart}>
@@ -37,9 +31,7 @@ export function Cart({ cart, removeFromCart, addToCart }) {
                   <p>${(product.price * product.qty).toFixed(2)}</p>
                   <button
                     onClick={() => {
-                      for (let i = 0; i < product.qty; i++) {
-                        removeFromCart(product);
-                      }
+                      clearCart(product);
                     }}
                   >
                     Remove

@@ -1,21 +1,21 @@
 
 import styles from "./Header.module.css";
-import { ShoppingBasket, CircleUserRound, Package } from "lucide-react";
+import { ShoppingBasket, CircleUserRound } from "lucide-react";
 import { Link } from "react-router";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import { SessionContext } from "../context/SessionContext";
 
 
 export function Header() {
   const { cart } = useContext(CartContext);
   return (
     <header className={styles.header1}>
-      <Link to="/" className={styles.title}>MJ_collection</Link>
+      <Link to="/" className={styles.title}>MJ_Collecion</Link>
       <div className={styles.cart}>
         <Link to="/cart"><ShoppingBasket /></Link>
         { cart.length === 0 ? <h5></h5> : <p>{cart.length}</p>}
-        {useContext(CartContext).session != null ? <Link to="/user"><CircleUserRound /></Link> : <Link to="/login"><CircleUserRound /></Link>}
-        <Link to="/stock"><Package /></Link>
+        {useContext(SessionContext).session != null ? <Link to="/user"><CircleUserRound /></Link> : <Link to="/login"><CircleUserRound /></Link>}
       </div>
     </header>
   );
